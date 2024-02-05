@@ -1,0 +1,615 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+footer{
+  padding: 0 10%;
+}
+
+
+/* Header styles */
+header {
+  border-bottom: 2px solid #000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #2C3E50;
+  z-index: 1000;
+}
+
+/* This container is for navbar */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10%;
+  max-width: auto;
+  margin: 0 auto;
+}
+
+/* Logo and Navigation */
+.logo {
+    border-radius: 50px;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.links li {
+  margin-right: 20px;
+}
+
+.links li:last-child {
+  margin-right: 0;
+}
+
+.pages {
+  text-decoration: none;
+  color:white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 10px;
+}
+
+/* Hover styles */
+
+.pages:hover {
+  color: #ffffff;
+  /* Change hover color */
+  background: #000000 radial-gradient(circle, transparent 1%, #ff0000 1%) center/15000%;
+}
+
+.pages:active {
+  color: #ffffff;
+  /* Change hover color */
+  background-size: 100%;
+  transition: background 0s;
+}
+
+
+.link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  transition: color 1s ease-in-out;
+}
+
+/* Links Color on hover */
+
+.fa-x-twitter:hover {
+  color: #ff0000;
+}
+
+.fa-linkedin-in:hover {
+  color: #0077b5;
+}
+
+.fa-github:hover {
+  color: #30038f;
+}
+
+.fa-instagram:hover {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #4f5bd5, #487ee6, #34e5eb, #34e5eb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* hover transition for images */
+
+img{
+  transition: transform 0.3s ease; /* Define the transition property */
+}
+
+img:hover{
+  transform: scale(1.1); /* Increase the scale to make it larger */
+}
+
+
+
+
+
+/* Main section */
+main {
+  margin-top: 79px;
+  padding: 0 10%;
+  margin-bottom: 0px;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.topSection p {
+  animation: fadeIn 4s infinite; /* Adjust the animation duration as needed */
+}
+
+.hii{
+    width: 50px;
+}
+
+/* Top and content sections */
+main
+{
+  /* background: url(https://media.istockphoto.com/id/1410759893/vector/background-illustration-evoking-digital-technology.jpg?s=612x612&w=0&k=20&c=yuqbDtxjFKGakT3tCB5olTS86Oj-b971QA89j3zNmso=); */
+    background-color: #77a2ad;}
+.topSection,
+.contentSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000;
+}
+@keyframes wavingMotion {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.hii {
+  width: 50px;
+  animation: wavingMotion 2s infinite; /* Adjust the animation duration as needed */
+}
+.contentSection{
+  border-bottom: none;
+}
+
+.leftSection {
+  width: 49%;
+}
+
+.fa-circle-dot {
+  padding-right: 10px;
+}
+
+.status {
+  font-size: large;
+  font-weight: bold;
+}
+
+.statusAns {
+  font-weight: lighter;
+  color: #ff0000;
+}
+
+.rightSection {
+  display: flex;
+  width: 30%;
+  text-align: right;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightSection img {
+  max-width: 90%;
+  padding: 10px;
+  height: auto;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3);
+  outline: 2px solid black; /* Adjust the outline color and width as needed */
+}
+
+.myName {
+  color: #ff0000;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  25% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+
+.intro span {
+  display: inline-block;
+  opacity: 0;
+  animation: slideIn 2s infinite; /* Adjust the animation duration as needed */
+}
+
+.intro span:nth-child(1) {
+  animation-delay: 0.5s; /* Adjust the delay for the first letter */
+}
+
+.intro span:nth-child(2) {
+  animation-delay: 1s; /* Adjust the delay for the second letter */
+}
+
+.intro span:nth-child(3) {
+  animation-delay: 1.5s; /* Adjust the delay for the third letter */
+}
+
+.intro span:nth-child(4) {
+  animation-delay: 2s; /* Adjust the delay for the fourth letter */
+}
+
+.intro span:nth-child(5) {
+  animation-delay: 2.5s; /* Adjust the delay for the fifth letter */
+}
+
+.intro span:nth-child(6) {
+  animation-delay: 3s; /* Adjust the delay for the sixth letter */
+}
+
+.intro span:nth-child(7) {
+  animation-delay: 3.5s; /* Adjust the delay for the seventh letter */
+}
+
+/* Additional styling */
+.myName {
+  color:darkmagenta; 
+  font-weight: 400;
+  font-family:'Playpen Sans', cursive;;
+}
+
+.myName:hover {
+  color: #003cff;
+}
+
+.imp-txt {
+  color:blue;
+}
+
+.contentSection .leftSection {
+  margin: 5% 0;
+}
+
+.contentSection .leftSection .intro {
+  font-size: 3rem;
+}
+
+.about {
+  margin-top: 50px;
+  font-size: larger;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+/* Footer section */
+footer {
+  display: flex;
+  border-top: 2px solid black;
+  padding: 20px 10%;
+  margin-top:1px;
+  background-color: #34495E;
+  color:black;
+}
+
+.footerContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color:black;
+}
+
+.footerContainer .up{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  color:black;
+}
+
+.ftr-nav{
+  list-style: none;
+  color:black;
+
+}
+
+.ftr-logo{
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+
+.ftr-logo .name{
+  padding: 10px;
+}
+
+.footerContainer .down{
+  margin-top: 20px;
+  border-top: 2px solid black;
+  padding-top: 20px;
+}
+
+.nav-head{
+  font-size:larger;
+  font-weight: 600;
+  
+}
+.nav-head li{
+  color:black;
+}
+
+.ftr-nav a {
+  text-decoration: none;
+  color: grey; /* Set the color to black */
+}
+
+.ftr-nav a:hover {
+  color: #ff0000; /* Change the hover color as desired */
+}
+
+/* Below is for the about section */
+
+.about-content{
+  display: flex;
+  margin-top: 0%;
+  height: 90vh;
+  
+}
+
+.about-left img{
+  width: auto;
+  height: 90vh;
+}
+
+.about-right{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+
+}
+
+.aboutMe{
+ 
+  align-items:center;
+  height: 300px;
+  width: 200px;
+  background-color:pink;
+  padding: 30px;
+
+}
+
+/* ABout me */
+.ma{
+  color:#000;
+  background-color:rgb(255, 230, 0);
+  margin-top:5%;
+  margin-bottom:0%;
+  height:40px;
+  display:flex;
+  padding-left: 40%;
+  padding-top: 1%;
+  font-weight: bolder;
+  font-style:oblique;
+  
+}
+.ma span{
+  color:#003cff;
+}
+.imgM
+{
+  height:50px;
+  width:50px;
+}
+
+  h2 {
+  display: inline-block;
+  border-bottom: 2px solid transparent; /* Initial transparent border */
+  transition: border-bottom 0.3s ease;
+  
+  
+}
+
+h2:hover {
+  border-bottom-color: #3498db; /* Border color on hover */
+}
+
+.about-content{
+  background-color: #77a2ad;
+}
+
+
+.aboutMe h2 {
+  color: #FF4081; 
+}
+
+.aboutMe li {
+  color: #5b4caf; 
+  margin-left: -15px; 
+  list-style: none;;
+  position: relative;
+  font-weight: bold;
+}
+
+/* Add hover effect on list items */
+.aboutMe li:hover {
+  text-decoration: underline;
+  color: #2196F3; /* Change color on hover, e.g., blue */
+}
+
+/* Add hover effect on h2 */
+.aboutMe h2:hover {
+  background-color: #FFD700; /* Yellow color, change it to your preferred color */
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+/* Below is for the contact me section  */
+.contact{
+  padding-top: 80px;
+  background-color:#77A2AD ;
+}
+
+.content{
+  padding: 0 10%;
+  text-align: center;
+}
+
+.conatact-container{
+  display: flex;
+  padding: 20px 10%;
+  justify-content: space-between;
+}
+
+
+.contact-form{
+  background-color: #38373745;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+textarea {
+  max-width: 100%; 
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 10px; 
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+select{
+  margin-bottom: 16px;
+}
+
+.contact-icn{
+  padding-right: 10px;
+}
+
+.contact-info{
+  width:40%;
+}
+
+.box{
+  margin: 0 0 40px 0;
+  border-radius: 10px;
+  background-color: #38373745;
+  width: 100%;
+  padding: 20px;
+}
+
+/* below is the form element css */
+.age-range {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.age-range label {
+  display: block;
+  margin: 0 0 8px 40px;
+}
+
+.gender-options {
+  display: block;
+  margin: 0 0 8px 40px;
+}
+
+.gender-options label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.related-options{
+  display: block;
+  margin: 0 0 8px 40px;
+
+}
+
+.related-options label {
+  display: block;
+  margin-bottom: 8px;
+}
